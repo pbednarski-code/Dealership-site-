@@ -1,0 +1,66 @@
+@model IEnumerable<DealerAutoMVC.Models.RaportSprzedazy>
+
+@{
+    ViewData["Title"] = "Raport sprzedaży";
+}
+
+<h1>Raport sprzedaży</h1>
+
+<div class="mb-3">
+    <p>
+        <strong>Liczba transakcji:</strong> @ViewData["LiczbaTransakcji"]
+    </p>
+    <p>
+        <strong>Suma sprzedaży:</strong> @ViewData["SumaSprzedazy"] zł
+    </p>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID transakcji
+            </th>
+            <th>
+                Klient
+            </th>
+            <th>
+                Samochód
+            </th>
+            <th>
+                Data transakcji
+            </th>
+            <th>
+                Cena sprzedaży
+            </th>
+            <th>
+                Forma płatności
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+        <tr>
+            <td>
+                @item.TransakcjaId
+            </td>
+            <td>
+                @item.Klient
+            </td>
+            <td>
+                @item.Samochod
+            </td>
+            <td>
+                @item.DataTransakcji.ToString("yyyy-MM-dd")
+            </td>
+            <td>
+                @item.CenaSprzedazy zł
+            </td>
+            <td>
+                @item.FormaPlatnosci
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

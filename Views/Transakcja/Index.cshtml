@@ -1,0 +1,65 @@
+@model IEnumerable<DealerAutoMVC.Models.Transakcja>
+
+@{
+    ViewData["Title"] = "Transakcje";
+}
+
+<h1>Transakcje</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Klient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModelSamochodu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataTransakcji)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CenaSprzedazy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FormaPlatnosci)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Klient.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Klient.DaneKlienta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModelSamochodu.MarkaModel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataTransakcji)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CenaSprzedazy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormaPlatnosci)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

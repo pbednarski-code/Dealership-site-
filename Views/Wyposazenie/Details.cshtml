@@ -1,0 +1,60 @@
+@model DealerAutoMVC.Models.Wyposazenie
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Wyposazenie</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ModelSamochodu)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ModelSamochodu.Id)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Klimatyzacja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Klimatyzacja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nawigacja)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nawigacja)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SkorzanaTapicerka)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SkorzanaTapicerka)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.KameraCofania)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.KameraCofania)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CzujnikiParkowania)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CzujnikiParkowania)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AppleCarPlay)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AppleCarPlay)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

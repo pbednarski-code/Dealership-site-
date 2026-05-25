@@ -1,0 +1,14 @@
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/bin/Debug/net8.0/ApiClient
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/bin/Debug/net8.0/ApiClient.deps.json
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/bin/Debug/net8.0/ApiClient.runtimeconfig.json
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/bin/Debug/net8.0/ApiClient.dll
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/bin/Debug/net8.0/ApiClient.pdb
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/obj/Debug/net8.0/ApiClient.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/obj/Debug/net8.0/ApiClient.AssemblyInfoInputs.cache
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/obj/Debug/net8.0/ApiClient.AssemblyInfo.cs
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/obj/Debug/net8.0/ApiClient.csproj.CoreCompileInputs.cache
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/obj/Debug/net8.0/ApiClient.dll
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/obj/Debug/net8.0/refint/ApiClient.dll
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/obj/Debug/net8.0/ApiClient.pdb
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/obj/Debug/net8.0/ApiClient.genruntimeconfig.cache
+/Users/pbednarski/Programing/C#/Projekt/ApiClient/obj/Debug/net8.0/ref/ApiClient.dll
